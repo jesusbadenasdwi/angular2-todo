@@ -1,0 +1,5 @@
+<div class="view">
+    <input class="toggle" type="checkbox" (change)="doneClicked($event)">
+    <label [class.completed]="item.done">{{ item.text }}</label>
+    <button class="destroy" (click)="removeClicked()"></button>
+</div>
